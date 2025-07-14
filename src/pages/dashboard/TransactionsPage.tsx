@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useBanks } from '../../context/BankContext';
-import { getCountryByCode } from '../../data/countries';
+
 import { TransactionItem } from '../../components/dashboard/TransactionItem';
 import { AddTransactionModal } from '../../components/dashboard/AddTransactionModal';
 import { EmptyState } from '../../components/dashboard/EmptyState';
@@ -17,7 +17,7 @@ export const TransactionsPage: React.FC = () => {
     return null;
   }
 
-  const country = getCountryByCode(user.country);
+
 
   return (
     <DashboardLayout title="Transactions">

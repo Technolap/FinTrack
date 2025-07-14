@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { RegisterForm } from '../components/auth/RegisterForm';
 
 export const RegisterPage: React.FC = () => {
-  const [step, setStep] = useState(1);
+  const [step] = useState(1);
   const totalSteps = 3;
 
   return (
