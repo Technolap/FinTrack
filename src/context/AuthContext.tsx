@@ -77,10 +77,10 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
           createdAt: new Date().toISOString(),
         };
 
-        setUsers(prev => ({
-          ...prev,
+        setUsers({
+          ...users,
           [newUser.id]: { user: newUser, password }
-        }));
+        });
 
         setUser(newUser);
         resolve(newUser);

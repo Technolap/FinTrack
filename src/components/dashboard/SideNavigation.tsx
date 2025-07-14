@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Banknote, BarChart3, CreditCard, LayoutDashboard, LogOut, User, Wallet } from 'lucide-react';
+import { Banknote, BarChart3, CreditCard, LayoutDashboard, LogOut, User} from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 
 export const SideNavigation: React.FC = () => {

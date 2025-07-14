@@ -121,13 +121,16 @@ export const SpendingChart: React.FC<SpendingChartProps> = ({ transactions, curr
       y: {
         beginAtZero: true,
         ticks: {
-          callback: function(value: number) {
-            return value.toLocaleString(undefined, {
-              style: 'currency',
-              currency,
-              minimumFractionDigits: 0,
-              maximumFractionDigits: 0,
-            });
+          callback: function(this: any, tickValue: string | number) {
+            if (typeof tickValue === 'number') {
+              return tickValue.toLocaleString(undefined, {
+                style: 'currency',
+                currency,
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0,
+              });
+            }
+            return tickValue;
           }
         }
       }

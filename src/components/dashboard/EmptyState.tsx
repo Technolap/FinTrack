@@ -1,10 +1,6 @@
 import React from 'react';
 import { Button } from '../ui/Button';
-
-interface EmptyStateProps {
-  type: 'accounts' | 'transactions';
-  onAction: () => void;
-}
+import { EmptyStateProps } from '../../../EmptyStateProps';
 
 export const EmptyState: React.FC<EmptyStateProps> = ({ type, onAction }) => {
   return (

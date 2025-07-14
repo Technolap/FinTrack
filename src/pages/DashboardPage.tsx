@@ -4,7 +4,6 @@ import { useAuth } from '../context/AuthContext';
 import { useBanks } from '../context/BankContext';
 import { getCountryByCode } from '../data/countries';
 import { BankCard } from '../components/dashboard/BankCard';
-import { deleteBank } from '../context/BankContext';
 import { TransactionItem } from '../components/dashboard/TransactionItem';
 import { SpendingChart } from '../components/dashboard/SpendingChart';
 import { AddTransactionModal } from '../components/dashboard/AddTransactionModal';

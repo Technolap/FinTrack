@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { Bank, Transaction } from '../types';
+import { Bank, Transaction, Loan } from '../types';
 import { useAuth } from './AuthContext';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { v4 as uuidv4 } from '../utils/uuid';

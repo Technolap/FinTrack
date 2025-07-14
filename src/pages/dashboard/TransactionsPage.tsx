@@ -18,7 +18,6 @@ export const TransactionsPage: React.FC = () => {
   }
 
   const country = getCountryByCode(user.country);
-  const currency = country?.currency || 'USD';
 
   return (
     <DashboardLayout title="Transactions">
